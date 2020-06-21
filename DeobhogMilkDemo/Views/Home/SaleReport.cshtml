@@ -1,0 +1,239 @@
+﻿@{
+    ViewBag.Title = "SaleReport";
+    Layout = "~/Areas/Admin/Views/NewLayout.cshtml";
+}
+
+<div class="container-fluid">
+
+    <div class="row" style="margin-top:-20px;">
+
+        <div class="col-md-12">
+            <div class="card">
+                <form class="form-horizontal">
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col-md-2">
+                                <img src="~/Images/TMMilk.png" style="height:100px;width:150px;margin-top:-15px;" />
+                            </div>
+                            <div class="col-md-3">
+                                <b style="font-size:x-large;color:#132593;text-decoration:underline;"> Profit/Loss (From Sale)</b>
+                            </div>
+
+                            <div class="col-md-7">
+                                <div class="form-group row">
+                                    <label for="lname" class="col-sm-2 text-left control-label col-form-label"> From Date</label>
+                                    <div class="col-sm-3">
+                                        <input type="date" class="form-control" id="lname">
+                                    </div>
+
+                                    <label for="lname" class="col-sm-2 text-left control-label col-form-label"> To Date</label>
+                                    <div class="col-sm-3">
+                                        <input type="date" class="form-control" id="lname">
+                                    </div>
+
+
+                                </div>
+                                <div class="form-group row" style="margin-left:20px;">
+
+                                    <div class="col-md-3">
+                                        <button type="button" class="btn btn-primary" style="width:100px;height:50px;">
+                                            <i class=" mdi mdi-access-point"></i>
+                                            Ok
+                                        </button>
+                                    </div>
+                                    &nbsp;
+                                    <div class="col-md-3">
+                                        <button type="button" class="btn btn-primary" style="width: 100px; height: 50px;">
+                                            <i class=" mdi mdi-access-point"></i> Print
+                                        </button>
+                                    </div>
+                                    &nbsp;
+                                    @*<div class="col-md-3">
+                                            <button type="button" class="btn btn-primary" style="width: 100px; height: 50px;">
+                                                <i class=" mdi mdi-access-point"></i> Export
+                                            </button>
+                                        </div>*@
+
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+
+
+
+
+
+
+                        <div class="row" style="background-color:#c7bfbf;">
+
+                            <div class="col-md-4">
+                                <label>Report Type </label>
+                                <select class="select2 form-control custom-select" style="width: 100%; font-weight:bold">
+                                    &nbsp;
+                                    <option value="BM" selected="selected"> Party Wise Detail</option>
+                                    <option></option>
+                                </select>
+
+                            </div>
+                            <div class="col-md-8">
+                                <label>Ammount Name</label>
+                                <select class="select2 form-control custom-select" style="width: 100%; font-weight:bold">
+                                    &nbsp;
+                                    <option value="BM" selected="selected"> Cash</option>
+                                    <option></option>
+                                </select>
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+
+                        <br />
+                        <div class="row">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead class="thead-light table-bordered">
+                                        <tr>
+                                            <th>
+                                                Sr No.
+                                            </th>
+                                            <th scope="col">Description</th>
+                                            <th scope="col">Qty Received</th>
+                                            <th scope="col">Qty Dispatched</th>
+                                            <th scope="col">Profit/Loss</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody class="customtable table-bordered">
+                                        <tr>
+                                            <td>1.</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>2.</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td>3.</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td>4.</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td>5.</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+
+                       
+                      
+
+                        <div class="row">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead class="thead-light table-bordered">
+                                        <tr>
+
+                                            <th>
+                                                <button type="button" class="btn btn-primary" style="width: 100px; height: 50px;">
+                                                    <i class=" mdi mdi-access-point"></i> Export
+                                                </button>
+                                            </th>
+                                          
+
+                                            <th scope="col"></th>
+                                            <th scope="col"></th>
+                                            <th scope="col"></th>
+                                            <th scope="col">
+                                                <p>Total Received by Customers</p>
+
+                                                <p>Total Dispatched From Plant</p>
+
+                                                <p>Difference Profit/Loss</p>
+                                            </th>
+
+
+                                            <th scope="col">
+                                                Milk
+                                                <input type="text" class="form-control" />
+                                                <input type="text" class="form-control" />
+                                                <input type="text" class="form-control" />
+                                            </th>
+                                            <th scope="col">
+                                                Ghee
+                                                <input type="text" class="form-control" />
+                                                <input type="text" class="form-control" />
+                                                <input type="text" class="form-control" />
+                                            </th>
+                                            <th scope="col">
+                                                Powder
+                                                <input type="text" class="form-control" />
+                                                <input type="text" class="form-control" />
+                                                <input type="text" class="form-control" />
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="customtable"></tbody>
+                                </table>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </form>
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <!-- editor -->
+
+
+</div>
+
